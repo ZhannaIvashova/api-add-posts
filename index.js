@@ -38,6 +38,7 @@ btnCreate.onclick = function(event) {
         const newPostHtml = createHtmlString(dataPost);
         addToPage(newPostHtml);
     })
+    .catch(error => console.log(error))
 
     postTitle.value = '';
     postText.value = '';
